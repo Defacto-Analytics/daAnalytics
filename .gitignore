@@ -1,0 +1,22 @@
+# Editor configs 
+#/.vs
+/.vscode
+
+# Binaries
+/daLib/bin
+/daLib/obj
+/daAnalyticsExcel/bin
+/daAnalyticsExcel/obj
+/daAnalyticsExcel/sheets
+/daAnalyticsSQLServer
+
+# Packages
+# /packages 
+
+
+# Temporary files
+*.tmp
+*.swp
+*~
+*.snk
+

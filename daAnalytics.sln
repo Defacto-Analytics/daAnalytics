@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "daLib", "daLib\daLib.csproj", "{608B7002-B74C-4665-869A-ECD77C8D275E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "daAnalyticsExcel", "daAnalyticsExcel\daAnalyticsExcel.csproj", "{A30C67E9-C7DC-4C86-9146-9C77A2DE25D7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{608B7002-B74C-4665-869A-ECD77C8D275E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{608B7002-B74C-4665-869A-ECD77C8D275E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{608B7002-B74C-4665-869A-ECD77C8D275E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{608B7002-B74C-4665-869A-ECD77C8D275E}.Debug|x86.Build.0 = Debug|Any CPU
+		{608B7002-B74C-4665-869A-ECD77C8D275E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{608B7002-B74C-4665-869A-ECD77C8D275E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{608B7002-B74C-4665-869A-ECD77C8D275E}.Release|x86.ActiveCfg = Release|Any CPU
+		{608B7002-B74C-4665-869A-ECD77C8D275E}.Release|x86.Build.0 = Release|Any CPU
+		{A30C67E9-C7DC-4C86-9146-9C77A2DE25D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A30C67E9-C7DC-4C86-9146-9C77A2DE25D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A30C67E9-C7DC-4C86-9146-9C77A2DE25D7}.Debug|x86.ActiveCfg = Debug|x86
+		{A30C67E9-C7DC-4C86-9146-9C77A2DE25D7}.Debug|x86.Build.0 = Debug|x86
+		{A30C67E9-C7DC-4C86-9146-9C77A2DE25D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A30C67E9-C7DC-4C86-9146-9C77A2DE25D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A30C67E9-C7DC-4C86-9146-9C77A2DE25D7}.Release|x86.ActiveCfg = Release|x86
+		{A30C67E9-C7DC-4C86-9146-9C77A2DE25D7}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {461DFF01-0DA4-4198-82A8-EA06D3890E61}
+	EndGlobalSection
+EndGlobal

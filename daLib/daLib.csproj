@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{608B7002-B74C-4665-869A-ECD77C8D275E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>daLib</RootNamespace>
+    <AssemblyName>daLib</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="src\Blocks\Block.cs" />
+    <Compile Include="src\Currencies\ccyManager.cs" />
+    <Compile Include="src\Currencies\ccyBuilder.cs" />
+    <Compile Include="src\Currencies\Currency.cs" />
+    <Compile Include="src\Currencies\ccyPair.cs" />
+    <Compile Include="src\HelperTypes.cs" />
+    <Compile Include="src\Conventions\Calenders\BusinessCalendar.cs" />
+    <Compile Include="src\Conventions\Calenders\Denmark.cs" />
+    <Compile Include="src\Conventions\Calenders\Target2.cs" />
+    <Compile Include="src\Conventions\Calenders\WeekendsOnly.cs" />
+    <Compile Include="src\Conventions\ConventionLayer.cs" />
+    <Compile Include="src\Conventions\Day.cs" />
+    <Compile Include="src\Conventions\DayCount.cs" />
+    <Compile Include="src\Conventions\DayRule.cs" />
+    <Compile Include="src\Conventions\IConvention.cs" />
+    <Compile Include="src\Conventions\Index.cs" />
+    <Compile Include="src\Instruments\SingleCashflows\FRA.cs" />
+    <Compile Include="src\Instruments\SingleCashflows\FxFwd.cs" />
+    <Compile Include="src\Instruments\SingleCashflows\SingleCashflow.cs" />
+    <Compile Include="src\Model\CurveModelBuilder.cs" />
+    <Compile Include="src\Model\Curve.cs" />
+    <Compile Include="src\Model\CurveModel.cs" />
+    <Compile Include="src\DateUtils\DateUtils.cs" />
+    <Compile Include="src\Exception\ExcelException.cs" />
+    <Compile Include="src\Helper.cs" />
+    <Compile Include="src\IClone.cs" />
+    <Compile Include="src\Instruments\Instrument.cs" />
+    <Compile Include="src\Instruments\InstrumentBuilder.cs" />
+    <Compile Include="src\Instruments\Swaps\IRS.cs" />
+    <Compile Include="src\Instruments\Swaps\OIS.cs" />
+    <Compile Include="src\Instruments\Swaps\Swap.cs" />
+    <Compile Include="src\Math\Interpolate.cs" />
+    <Compile Include="src\Math\Matrix.cs" />
+    <Compile Include="src\Math\Optimization\Constraint.cs" />
+    <Compile Include="src\Math\Optimization\CostFunction.cs" />
+    <Compile Include="src\Math\Optimization\EndCriteria.cs" />
+    <Compile Include="src\Math\Optimization\LevenBergMarquardt.cs" />
+    <Compile Include="src\Math\Optimization\MINPACK.cs" />
+    <Compile Include="src\Math\Optimization\Problem.cs" />
+    <Compile Include="src\Math\Vector.cs" />
+    <Compile Include="src\Patterns\FastActivator.cs" />
+    <Compile Include="src\Portfolios\Portfolio.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

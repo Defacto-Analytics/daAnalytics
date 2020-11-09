@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<DnaLibrary Name="daAnalyticsExcel Add-In" RuntimeVersion="v4.0" xmlns="http://schemas.excel-dna.net/addin/2018/05/dnalibrary">
+  <ExternalLibrary Path="daAnalyticsExcel.dll" ExplicitExports="false" LoadFromBytes="true" Pack="true" IncludePdb="false" />
+  <Reference Path="daLib.dll" Pack="true" />
+  <Reference Path="ExcelDna.IntelliSense.dll" Pack="true" />
+  
+
+
+  <CustomUI>
+    <customUI xmlns='http://schemas.microsoft.com/office/2009/07/customui'>
+      <ribbon>
+        <tabs>
+          <tab id='Analytics' label='daAnalytics' visible='true'>
+            <group id='models' label='Manage Models' visible='true'>
+			  <button id='calibrateModels' label='Calibrate Models' size='large' imageMso='ShapeLightningBolt' onAction='CalibrateModels' visible='true'/>
+  <!--        <button id='createModel' label='Create Model' size='large' imageMso='SourceControlAddObjects' onAction='CreateModel' visible='true'/> -->
+              <button id='clearModel' label='Clear Model' size='large' imageMso='ClearAll' onAction='ClearModel' visible='true'/>
+              <button id='removeModel' label='Remove Model' size='large' imageMso='SlideDelete' onAction='RemoveModel' visible='true'/>
+            </group >
+            <group id='portfolios' label='Manage Portfolios' visible='true'>
+  <!--        <button id='createPortfolio' label='Create Portfolio' size='large' imageMso='PivotTableExpandField' onAction='CreatePortfolio' visible='true'/> -->
+              <button id='clearPortfolio' label='Clear Portfolio' size='large' imageMso='ClearAll' onAction='ClearPortfolio' visible='true'/>
+              <button id='removePortfolio' label='Remove Portfolio' size='large' imageMso='PivotCollapseField' onAction='RemovePortfolio' visible='true'/>
+            </group >
+  <!--
+			<group id='excelTemplates' label='Excel Templates' visible='true'>
+				  <button id='sqlTemplate' label='SQL Template' size='large' imageMso='TableExcelSpreadsheetInsert' onAction='sqlTemplate' visible='true'/>
+			 </group>
+  -->
+          </tab>
+        </tabs>
+      </ribbon>
+    </customUI>
+  </CustomUI>
+  
+ 
+  
+  
+  
+  <!--
+       The RuntimeVersion attribute above allows two settings:
+       * RuntimeVersion="v4.0" - for .NET 4 and 4.5
+       * RuntimeVersion="v2.0" - for .NET 2.0, 3.0 and 3.5
+
+       You can have IntelliSense (autocomplete) and validation for this file.
+       See https://github.com/Excel-DNA/ExcelDna/tree/master/Distribution/XmlSchemas/
+
+       Additional referenced assemblies can be specified by adding 'Reference' tags. 
+       These libraries will not be examined and registered with Excel as add-in libraries, 
+       but will be packed into the -packed.xll file and loaded at runtime as needed.
+       For example:
+
+       <Reference Path="Another.Library.dll" Pack="true" />
+
+       Excel-DNA also allows the XML for ribbon UI extensions to be specified in the .dna file.
+       See the main Excel-DNA site at http://excel-dna.net for downloads of the full distribution.
+  -->
+</DnaLibrary>
