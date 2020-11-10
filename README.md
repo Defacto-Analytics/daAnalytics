@@ -1,4 +1,4 @@
-# **daAnalytics** - A in-development linear rates pricing and risk library.
+# **daAnalytics** - a in-development linear rates pricing and risk library.
 Developed by [Gustav Rasmussen](https://www.linkedin.com/in/gustav-rasmussen-b013135b/) & [Alexander Bech](https://www.linkedin.com/in/alexander-lillevang-bech-70186b120/) @DefactoAnalytics
 
 ## **Project Setup**
@@ -11,8 +11,7 @@ The binaries for the project consists of a simple .dll file from daLib and a var
 
 It's recommended to build this project with Visual Studio, as it's built upon .NET Framework, in order to comply with ExcelDNA. Then it's also possible to debug the code via Excel. Simply load the project and press start in VS.
 
-As an introduction to the Excel addin, it's recommended to start with the supplied Excel sheet: [prototype.xlsm](daAnalytics/daAnalyticsExcel/prototype.xlsm)
-
+As an introduction to the Excel addin, it's recommended to start with the supplied Excel sheet: *daAnalytics/daAnalyticsExcel/prototype.xlsm*
 
 
 
